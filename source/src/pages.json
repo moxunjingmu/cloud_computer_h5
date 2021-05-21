@@ -1,0 +1,27 @@
+{
+	/**
+	 * easycom打包的时候是按需引入的，您可以放心引入uView的整个组件库，发布打包时会自动剔除您没有使用的组件(注意：调试时仍然是全部引入的)
+	 */
+	"easycom": {
+		"^u-(.*)": "@/../node_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/order/order"
+		},
+		{
+			"path" : "pages/index/index"
+		},
+		{
+			"path": "pages/user/user"
+		},
+		{
+			"path": "pages/order/orderDetails"
+		}
+
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	}
+}
