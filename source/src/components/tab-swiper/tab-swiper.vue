@@ -1,7 +1,7 @@
 <template>
 	<view class="tab-swiper">
 		
-		<nav-tab class="tab-swiper-nav" v-show="data.length > 1" :data="data" :showTitle="showTitle" v-model="myTabIndex"></nav-tab>
+		<nav-tab class="tab-swiper-nav" v-show="data.length >= 1" :data="data" :showTitle="showTitle" v-model="myTabIndex"></nav-tab>
 		
 		<view class="tab-bar-line"></view>
 		<swiper 
@@ -104,7 +104,9 @@
 	}
 	.tab-swiper-view{
 		flex: 1;
+		height: 100%;
 	}
+
 
 
 }

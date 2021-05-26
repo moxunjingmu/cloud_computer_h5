@@ -8,16 +8,23 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 
 		{
-			"path": "pages/order/order"
+			"path": "pages/order/order",
+			"name": "订购云电脑",
+			"meta": {
+				"title": "订购云电脑"
+			}
 		},
 		{
-			"path" : "pages/index/index"
-		},
-		{
-			"path": "pages/user/user"
+			"path": "pages/user/userOrder"
 		},
 		{
 			"path": "pages/order/orderDetails"
+		},
+		{
+			"path": "pages/order/orderConfirm"
+		},
+		{
+			"path": "pages/order/orderPay"
 		}
 
     ],

@@ -3,6 +3,7 @@ import Vue from 'vue'
  * https://hhyang.cn/src/router/start/quickstart.html, 2.x
  */
 import { RouterMount, createRouter } from 'uni-simple-router';
+import modules from './modules/index'
 
 // 初始化
 const router = createRouter({
@@ -31,7 +32,7 @@ const router = createRouter({
 	//通过启动页生命钩子绘制加载gif
 	
 	platform: process.env.VUE_APP_PLATFORM,  
-	routes: [...ROUTES]
+	routes: [...modules]
 });
 
 Vue.use(router);
